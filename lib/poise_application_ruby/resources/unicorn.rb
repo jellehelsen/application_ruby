@@ -76,10 +76,18 @@ module PoiseApplicationRuby
           end
         end
 
+        def unicorn_options
+          if ::File.file?(::File.join(new_resource.path, 'config', 'unicorn.rb'))
+            "--port #{new_resource.port} -c #{::File.join(new_resource.path, 'config', 'unicorn.rb')}"
+          else
+            "--port #{new_resource.port} #{configru_path}"
+          end
+        end
+
         # Set service resource options.
         def service_options(resource)
           super
-          resource.ruby_command("unicorn --port #{new_resource.port} #{configru_path}")
+          resource.ruby_command("unicorn #{unicorn_options}")
         end
       end
     end
