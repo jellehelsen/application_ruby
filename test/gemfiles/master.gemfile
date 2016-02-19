@@ -1,5 +1,5 @@
 #
-# Copyright 2015, Noah Kantrowitz
+# Copyright 2015-2016, Noah Kantrowitz
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,5 +23,6 @@ gem 'poise-application', github: 'poise/application'
 gem 'poise-application-git', github: 'poise/application_git'
 gem 'poise-boiler', github: 'poise/poise-boiler'
 gem 'poise-languages', github: 'poise/poise-languages'
+gem 'poise-profiler', github: 'poise/poise-profiler'
 gem 'poise-ruby', github: 'poise/poise-ruby'
 gem 'poise-service', github: 'poise/poise-service'

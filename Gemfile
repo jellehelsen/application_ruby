@@ -1,5 +1,5 @@
 #
-# Copyright 2015, Noah Kantrowitz
+# Copyright 2015-2016, Noah Kantrowitz
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,5 +33,6 @@ dev_gem 'poise-application', path: '../application'
 dev_gem 'poise-application-git', path: '../application_git'
 dev_gem 'poise-boiler'
 dev_gem 'poise-languages'
+dev_gem 'poise-profiler'
 dev_gem 'poise-ruby'
 dev_gem 'poise-service'

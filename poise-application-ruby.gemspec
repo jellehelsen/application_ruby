@@ -1,5 +1,5 @@
 #
-# Copyright 2015, Noah Kantrowitz
+# Copyright 2015-2016, Noah Kantrowitz
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -40,6 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'poise-ruby', '~> 2.1'
   spec.add_dependency 'poise-service', '~> 1.0'
 
-  spec.add_development_dependency 'poise-boiler', '~> 1.0'
+  spec.add_development_dependency 'berkshelf', '~> 4.0'
+  spec.add_development_dependency 'poise-boiler', '~> 1.6'
   spec.add_development_dependency 'poise-application-git', '~> 1.0'
 end
